@@ -6,11 +6,6 @@ static int insert_node(SLL *pSLL, SLLnode pNode) {
 	if (pSLL == NULL) {
 		return ER_EMPTYLIST;
 	}
-	/*
-	if (pNode == NULL) {
-		return ER_EMPTYNODE;
-	}
-	*/
 	pNewNode = (SLLptr) Malloc(sizeof(SLLnode));
 	*pNewNode = pNode;
 	pNewNode->next = pSLL->ptr;
